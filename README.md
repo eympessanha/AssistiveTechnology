@@ -61,7 +61,7 @@ sudo apt install mpg123 pulseaudio pulseaudio-module-bluetooth
 ### Project Configuration
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/AssistiveTechnology.git](https://github.com/YOUR_USERNAME/AssistiveTechnology.git)
+    git clone [https://github.com/eympessanha/AssistiveTechnology.git](https://github.com/eympessanha/AssistiveTechnology.git)
     cd AssistiveTechnology/image-captioning
     ```
 
