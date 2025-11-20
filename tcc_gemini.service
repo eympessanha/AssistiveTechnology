@@ -1,0 +1,23 @@
+[Unit]
+Description=Servidor TCC Gemini e Bluetooth
+# Only starts after the network and sound system are ready
+After=network.target pulseaudio.service sound.target
+
+[Service]
+# User that runs the script
+User=ibmec
+Group=ibmec
+
+# Sets environment variables required for audio to work
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Environment=PULSE_SERVER=unix:/run/user/1000/pulse/native
+
+# Script to execute
+ExecStart=/home/ibmec/tcc/boot.sh
+
+# If the script fails, it tries to restart automatically after 10 seconds
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
